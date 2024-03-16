@@ -1,0 +1,2 @@
+npx playwright test
+npm run pre-commit

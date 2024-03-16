@@ -1,0 +1,461 @@
+/* Normalize */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: 0;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+textarea {
+  resize: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+}
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+}
+a.active,
+a.focus,
+a.visited,
+a.hover {
+  text-decoration: none;
+}
+
+/* Form reset */
+input,
+label,
+legend,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  font-size: 13px;
+  font-family: Arial;
+}
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+button,
+input[type='reset'],
+input[type='button'],
+input[type='submit'],
+input[type='checkbox'],
+input[type='radio'],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type='checkbox'],
+input[type='radio'] {
+  width: 13px;
+  height: 13px;
+}
+input[type='search'] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::-webkit-search-decoration {
+  display: none;
+}
+button,
+input[type='reset'],
+input[type='button'],
+input[type='submit'] {
+  overflow: visible;
+  width: auto;
+}
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+textarea {
+  vertical-align: top;
+  overflow: auto;
+}
+select[multiple] {
+  vertical-align: top;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+input,
+label,
+select,
+button,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Stormy: Smooth Trasitions v.:0.1 beta */
+.ts {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.ts.ts-bg-color {
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+}
+.ts.ts-color {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+}
+.ts.ts-opacity {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.ts.ts-border-color {
+  -webkit-transition-property: border-color;
+  -moz-transition-property: border-color;
+  -ms-transition-property: border-color;
+  -o-transition-property: border-color;
+  transition-property: border-color;
+}
+.ts.ts-width {
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -ms-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+}
+.ts.ts-height {
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -ms-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+}
+.ts.ts-linear {
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.ts.ts-ease {
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.ts.ts-ease-in {
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -ms-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.ts.ts-ease-out {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.ts.ts-ease-in-out {
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.ts.ts-instant {
+  -webkit-transition-duration: 75ms;
+  -moz-transition-duration: 75ms;
+  -ms-transition-duration: 75ms;
+  -o-transition-duration: 75ms;
+  transition-duration: 75ms;
+}
+.ts.ts-quick {
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -ms-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+.ts.ts-medium {
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -ms-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.ts.ts-slow {
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -ms-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.ts.ts-slower {
+  -webkit-transition-duration: 700ms;
+  -moz-transition-duration: 700ms;
+  -ms-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+}
+.ts.ts-slowest {
+  -webkit-transition-duration: 1100ms;
+  -moz-transition-duration: 1100ms;
+  -ms-transition-duration: 1100ms;
+  -o-transition-duration: 1100ms;
+  transition-duration: 1100ms;
+}
+.ts.ts-superslow {
+  -webkit-transition-duration: 5000ms;
+  -moz-transition-duration: 5000ms;
+  -ms-transition-duration: 5000ms;
+  -o-transition-duration: 5000ms;
+  transition-duration: 5000ms;
+}
+.ts.ts-delay-instant {
+  -webkit-transition-delay: 75ms;
+  -moz-transition-delay: 75ms;
+  -ms-transition-delay: 75ms;
+  -o-transition-delay: 75ms;
+  transition-delay: 75ms;
+}
+.ts.ts-delay-quick {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -ms-transition-delay: 200ms;
+  -o-transition-delay: 75ms;
+  transition-delay: 200ms;
+}
+.ts.ts-delay-medium {
+  -webkit-transition-delay: 300ms;
+  -moz-transition-delay: 300ms;
+  -ms-transition-delay: 300ms;
+  -o-transition-delay: 75ms;
+  transition-delay: 300ms;
+}
+.ts.ts-delay-slow {
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -ms-transition-delay: 500ms;
+  -o-transition-delay: 75ms;
+  transition-delay: 500ms;
+}
+.ts.ts-delay-slower {
+  -webkit-transition-delay: 700ms;
+  -moz-transition-delay: 700ms;
+  -ms-transition-delay: 700ms;
+  -o-transition-delay: 75ms;
+  transition-delay: 700ms;
+}
+.ts.ts-delay-slowest {
+  -webkit-transition-delay: 1100ms;
+  -moz-transition-delay: 1100ms;
+  -ms-transition-delay: 1100ms;
+  -o-transition-delay: 1100ms;
+  transition-delay: 1100ms;
+}
