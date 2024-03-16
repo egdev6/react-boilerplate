@@ -28,5 +28,6 @@ Boilerplate para proyectos con React / Typescript y varias librerías ya configu
     "preview": "vite preview",
     "prepare": "husky",
     "pre-commit": "lint-staged"
+    "test": "npx playwright test"
   }
 ```
