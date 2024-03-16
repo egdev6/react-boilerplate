@@ -12,9 +12,7 @@ export const CharactersProvider: FC<PropsWithChildren> = ({ children }) => {
 
   const { data, isFetching, isError, error, isSuccess } = useQuery({
     queryKey: [queries.CHARACTERS],
-    queryFn: () => getCharacters('0'), // Replace 'your_argument_here' with a valid string argument
-    refetchInterval: 5000,
-    retry: 3,
+    queryFn: () => getCharacters('0'),
     enabled: !characters,
   })
 
@@ -26,6 +24,7 @@ export const CharactersProvider: FC<PropsWithChildren> = ({ children }) => {
       console.log({ error })
     } else if (isSuccess) {
       setLoading(false)
+      console.log(data)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFetching, isError, isSuccess])

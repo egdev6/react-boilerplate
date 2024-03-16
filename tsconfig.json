@@ -36,6 +36,6 @@
       "utils/*": ["./src/utils/*"]
     }
   },
-  "include": ["src", "custom.d.ts"],
+  "include": ["src", "custom.d.ts", "tests/home-visual.spec.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
