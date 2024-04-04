@@ -13,7 +13,6 @@ Boilerplate para proyectos con React / Typescript y varias librerías ya configu
 <li>React-router-dom</li>
 <li>Styled-components</li>
 <li>React-loader-spinner</li>
-<li>Playwright</li>
 <li>Eslint</li>
 <li>Prettier</li>
 <li>Lint-staged</li>
@@ -30,6 +29,5 @@ Boilerplate para proyectos con React / Typescript y varias librerías ya configu
     "preview": "vite preview",
     "prepare": "husky",
     "pre-commit": "lint-staged"
-    "test": "npx playwright test"
   }
 ```
