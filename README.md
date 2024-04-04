@@ -4,19 +4,21 @@
 
 Boilerplate para proyectos con React / Typescript y varias librerías ya configuradas:
 
--Vite
--Typescript
--React
--React-Query
--Axios
--React-router-dom
--Styled-components
--React-loader-spinner
--Playwright
--Eslint
--Prettier
--Lint-staged
--Husky
+<ul>
+<li>Vite</li>
+<li>Typescript</li>
+<li>React</li>
+<li>React-Query</li>
+<li>Axios</li>
+<li>React-router-dom</li>
+<li>Styled-components</li>
+<li>React-loader-spinner</li>
+<li>Playwright</li>
+<li>Eslint</li>
+<li>Prettier</li>
+<li>Lint-staged</li>
+<li>Husky</li>
+</ul>
 
 ## Comandos
 
