@@ -1,53 +1,41 @@
 {
-  "name": "react-boilerplate",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "prepare": "husky",
-    "pre-commit": "lint-staged"
-  },
-  "dependencies": {
-    "@tanstack/react-query": "5.28.14",
-    "axios": "1.6.8",
-    "eslint-plugin-react": "7.34.1",
-    "path": "0.12.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-loader-spinner": "6.1.6",
-    "react-query": "3.39.3",
-    "react-router-dom": "6.22.3",
-    "styled-components": "6.1.8",
-    "vite-plugin-svgr": "4.2.0"
-  },
-  "devDependencies": {
-    "@playwright/test": "1.42.1",
-    "@types/node": "20.12.4",
-    "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.24",
-    "@types/react-router-dom": "5.3.3",
-    "@typescript-eslint/eslint-plugin": "7.5.0",
-    "@typescript-eslint/parser": "7.5.0",
-    "@vitejs/plugin-react": "4.2.1",
-    "eslint": "8.57.0",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-react-refresh": "0.4.6",
-    "husky": "9.0.11",
-    "lint-staged": "15.2.2",
-    "prettier": "3.2.5",
-    "typescript": "5.4.3",
-    "vite": "5.2.8"
-  },
-  "lint-staged": {
-    "*.{js, jsx,ts,tsx}": [
-      "eslint --fix"
-    ],
-    "*.{json,js,ts,jsx,tsx,html}": [
-      "prettier --write --ignore-unknown"
-    ]
-  }
+	"name": "egdev-react-boilerplate",
+	"private": false,
+	"version": "2.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "pnpm run lint && tsc -b && vite build",
+		"lint": "biome check --fix",
+		"lint:staged": "biome check --staged --fix --verbose",
+		"preview": "vite preview",
+		"pre-commit": "lint-staged --verbose && tsc"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "4.0.17",
+		"@tanstack/react-query": "5.71.0",
+		"axios": "1.8.4",
+		"dayjs": "1.11.13",
+		"path": "0.12.7",
+		"postcss": "8.5.3",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"react-router-dom": "7.4.1",
+		"vite-plugin-mock-simple": "1.0.3",
+		"vite-plugin-svgr": "4.3.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@tailwindcss/postcss": "^4.0.17",
+		"@types/node": "22.13.14",
+		"@types/react": "19.0.12",
+		"@types/react-dom": "19.0.4",
+		"@types/react-router-dom": "5.3.3",
+		"@vitejs/plugin-react": "4.3.4",
+		"@vitejs/plugin-react-swc": "3.8.1",
+		"autoprefixer": "^10.4.21",
+		"tailwindcss": "4.0.17",
+		"typescript": "5.8.2",
+		"vite": "6.2.3"
+	}
 }

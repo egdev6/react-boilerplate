@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2023",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["node"],
+    "incremental": true,
+    "outDir": "./dist",
+    "types": [
+      "vite-plugin-svgr/client"
+    ],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -21,21 +25,29 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Imports */
+    /* Paths */
     "baseUrl": ".",
     "paths": {
-      "src/*": ["./src/*"],
-      "api/*": ["./src/api"],
-      "icons/*": ["./src/assets/icons/*"],
-      "images/*": ["./src/assets/images/*"],
-      "components/*": ["./src/components/*"],
-      "config/*": ["./src/config/*"],
-      "constants/*": ["./src/constants/*"],
-      "hooks/*": ["./src/hooks/*"],
-      "models/*": ["./src/models/*"],
-      "utils/*": ["./src/utils/*"]
+      "@/*": ["./src/*"],
+      "@mocks/*": ["./mocks/*"],
+      "@api/*": ["./src/api/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@system/*": ["./src/components/system/*"],
+      "@atoms/*": ["./src/components/ui/atoms/*"],
+      "@molecules/*": ["./src/components/ui/molecules/*"],
+      "@organisms/*": ["./src/components/ui/organisms/*"],
+      "@templates/*": ["./src/components/ui/templates/*"],
+      "@config/*": ["./src/config/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@models/*": ["./src/models/*"],
+      "@pages/*":["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
-  "include": ["src", "custom.d.ts", "tests/home-visual.spec.js"],
+  "include": ["src", "main.tsx", "postcss.config.cjs"],
+  "exclude": ["./mocks/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

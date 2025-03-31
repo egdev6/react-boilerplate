@@ -1,4 +1,5 @@
 # Logs
+.husky
 logs
 *.log
 npm-debug.log*
@@ -23,6 +24,8 @@ dist-ssr
 *.sln
 *.sw?
 /test-results/
-/playwright-report/
 /blob-report/
-/playwright/.cache/
+
+
+package-lock.json
+pnpm-lock.yaml

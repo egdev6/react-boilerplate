@@ -1,15 +1,55 @@
-import { Route, createRoutesFromElements, createBrowserRouter } from 'react-router-dom'
+import { routes } from '@config/routes';
+import type { RouteProps } from '@models/routes';
+import Layout from '@templates/layout';
+import Loader from '@atoms/loader';
+import { Suspense } from 'react';
+import { Navigate, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import ProvidersByRoute from '@system/providers/provider-by-route';
 
-import Layout from 'components/system/layout'
-import HomePage from 'components/pages/home'
-import routes from 'config/routes'
+const renderRoutes = (route: RouteProps, isChild = false) => {
+  const Component = route.component;
 
-export const router = createBrowserRouter(
+  if (!route.children || (route.children.length === 0 && !isChild)) {
+    return (
+      <Route
+        key={self.crypto.randomUUID()}
+        path={route.path}
+        element={
+          <Suspense fallback={<Loader />}>
+            <ProvidersByRoute providers={route.providers ?? []}>
+              <Component />
+            </ProvidersByRoute>
+          </Suspense>
+        }
+      />
+    );
+  }
+
+  return (
+    <Route
+      key={self.crypto.randomUUID()}
+      path={route.path}
+      element={
+        <Suspense fallback={<Loader />}>
+          <ProvidersByRoute providers={route.providers ?? []}>
+            <Component />
+          </ProvidersByRoute>
+        </Suspense>
+      }
+    >
+      <Route index element={<Component />} />
+      {route.children.map((child) => renderRoutes(child, true))}
+    </Route>
+  );
+};
+
+const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Layout />}>
-      <Route path={routes.root} element={<HomePage />} />
-    </Route>
-  )
-)
+      {routes.map((route: RouteProps) => renderRoutes(route))}
+      <Route path='*' element={<Navigate replace to='/' />} />
+    </Route>,
+  ),
+);
 
-export default router
+export default Router;

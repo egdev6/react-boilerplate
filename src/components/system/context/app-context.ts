@@ -1,6 +1,6 @@
-import { createContext } from 'react'
-import { AppContextValue } from 'models/context'
+import { createContext } from 'react';
+import type { AppContextValue } from '@models/context';
 
-const AppContext = createContext<AppContextValue>({} as AppContextValue)
+const AppContext = createContext<AppContextValue>({} as AppContextValue);
 
-export default AppContext
+export default AppContext;
