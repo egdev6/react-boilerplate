@@ -1,8 +1,8 @@
 import type { RouteProps } from '@models/routes';
 import { lazy } from 'react';
-import { CharactersProvider } from '@/hooks/use-characters';
+import CustomQueryClientProvider from '@system/providers/react-query-provider';
 
-const defaultProviders: React.FC<React.PropsWithChildren>[] = [CharactersProvider];
+const defaultProviders: React.FC<React.PropsWithChildren>[] = [CustomQueryClientProvider];
 
 export const pathNames: Record<string, string> = {
   Root: '/',

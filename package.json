@@ -12,8 +12,9 @@
 		"pre-commit": "lint-staged --verbose && tsc"
 	},
 	"dependencies": {
+		"@tailwindcss/postcss": "4.0.17",
 		"@tailwindcss/vite": "4.0.17",
-		"@tanstack/react-query": "5.71.0",
+		"@tanstack/react-query": "5.71.1",
 		"axios": "1.8.4",
 		"dayjs": "1.11.13",
 		"path": "0.12.7",
@@ -34,6 +35,6 @@
 		"@vitejs/plugin-react-swc": "3.8.1",
 		"tailwindcss": "4.0.17",
 		"typescript": "5.8.2",
-		"vite": "6.2.3"
+		"vite": "6.2.4"
 	}
 }

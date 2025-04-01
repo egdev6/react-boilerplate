@@ -1,55 +1,58 @@
-import { type FC, type PropsWithChildren, useContext, useEffect, useMemo, useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import getCharacters from '@api/characters';
-import type Character from '@models/character';
-import CharactersContext from '@system/context/characters';
-import { useAppContext } from '@hooks/use-app-context';
-import { queries } from '@constants/index';
+import {
+	type FC,
+	type PropsWithChildren,
+	useContext,
+	useEffect,
+	useMemo,
+} from "react";
+import { useQuery } from "@tanstack/react-query";
+import getCharacters from "@api/characters";
+import CharactersContext from "@system/context/characters";
+import { useAppContext } from "@hooks/use-app-context";
+import { queries } from "@constants/index";
 
 export const CharactersProvider: FC<PropsWithChildren> = ({ children }) => {
-  const { setLoading } = useAppContext();
-  const [characters, setCharacters] = useState<Character[] | undefined>(undefined);
+	const { setLoading } = useAppContext();
 
-  const { data, isFetching, isError, error, isSuccess } = useQuery({
-    queryKey: [queries.CHARACTERS],
-    queryFn: () => getCharacters(0),
-    enabled: !characters,
-  });
+	const {
+		data: characters,
+		isFetching,
+		isSuccess,
+		isError,
+		error,
+	} = useQuery({
+		queryKey: [queries.CHARACTERS],
+		queryFn: () => getCharacters(0),
+	});
 
-  useEffect(() => {
-    if (isFetching) {
-      setLoading(true);
-    } else if (isError) {
-      setLoading(false);
-      console.log({ error });
-    } else if (isSuccess) {
-      setLoading(false);
-      console.log(data);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isFetching, isError, isSuccess]);
+	// Manejar el estado de carga
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+	useEffect(() => {
+		if (isFetching) {
+			setLoading(true);
+		} else if (isError) {
+			setLoading(false);
+			console.log({ error });
+		} else if (isSuccess) {
+			setLoading(false);
+			console.log(characters);
+		}
+	}, [isFetching, isError, isSuccess]);
 
-  const charactersList = useMemo(() => (data ? data : undefined), [data]);
+	const value = useMemo(
+		() => ({
+			characters,
+		}),
+		[characters],
+	);
 
-  useEffect(() => {
-    if (charactersList !== characters) {
-      setCharacters(charactersList); // Extract the data from the AxiosResponse object
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [charactersList]);
-
-  const value = useMemo(
-    () => ({
-      characters,
-      setCharacters,
-    }),
-    [characters, setCharacters],
-  );
-
-  return <CharactersContext.Provider value={value}>{children}</CharactersContext.Provider>;
+	return (
+		<CharactersContext.Provider value={value}>
+			{children}
+		</CharactersContext.Provider>
+	);
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useCharacters = () => {
-  return useContext(CharactersContext);
+	return useContext(CharactersContext);
 };

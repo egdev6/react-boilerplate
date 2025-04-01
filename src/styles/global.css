@@ -5,3 +5,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+
+@layer utilities {
+  .logo-container > svg {
+    @apply w-auto h-[30px] md:h-[40px]
+  }
+}

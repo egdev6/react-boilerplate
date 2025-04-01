@@ -1,8 +1,5 @@
-import { FC } from 'react'
-import * as S from './styled'
+import type { FC } from 'react';
 
-const Footer: FC = () => {
-  return <S.FooterContainer></S.FooterContainer>
-}
+const Footer: FC = () => <footer className='w-full h-[50px' />;
 
-export default Footer
+export default Footer;

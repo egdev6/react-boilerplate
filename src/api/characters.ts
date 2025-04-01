@@ -1,14 +1,15 @@
-import http from '.'
-import Character from 'models/character'
+import http from ".";
+import type Character from "@models/character";
 
-const getCharacters = async (page: number | undefined): Promise<Character[] | undefined> => {
-  try {
-    const { data } = await http.get(`character/?page=${page || 0}`)
-    return data.results
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } catch (error: any) {
-    if (error) return error.response
-  }
-}
+const getCharacters = async (
+	page: number | undefined,
+): Promise<Character[] | undefined | unknown> => {
+	try {
+		const { data } = await http.get(`character/?page=${page || 0}`);
+		return data.results;
+	} catch (error: unknown) {
+		if (error) return error;
+	}
+};
 
-export default getCharacters
+export default getCharacters;
