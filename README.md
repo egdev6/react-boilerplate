@@ -1,4 +1,4 @@
-[react-boilerplate.jpg](https://postimg.cc/ZCffFWMR)
+[![react-boilerplate.jpg](https://i.postimg.cc/y8KwK9hF/react-boilerplate.jpg)](https://postimg.cc/ZCffFWMR)
 
 ## Stack
 
