@@ -29,9 +29,6 @@
 
 [![react-boilerplate.jpg](https://i.postimg.cc/y8KwK9hF/react-boilerplate.jpg)](https://postimg.cc/ZCffFWMR)
 <br />
-<div align="center">
-  <h3 align="center">EGDEV-REACT-BOILERPLATE V2</h3>
-</div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
