@@ -69,7 +69,7 @@ Technologies used in this landing page's development
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[stars-shield]: https://github.com/egdev6/egdev-react-boilerplate/stargazers
+[stars-shield]: https://img.shields.io/github/stars/egdev6/egdev-react-boilerplate.svg?style=for-the-badge
 [stars-url]: https://github.com/egdev6/egdev-react-boilerplate/stargazers
 [issues-shield]: https://img.shields.io/github/issues/egdev6/egdev-react-boilerplate.svg?style=for-the-badge
 [issues-url]: https://github.com/egdev6/egdev-react-boilerplate/issues
