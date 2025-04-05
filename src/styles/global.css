@@ -1,13 +1,13 @@
+@import "./fonts.css";
 @import "tailwindcss";
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-}
+@import "./theme.css";
 
 @layer utilities {
-  .logo-container > svg {
-    @apply w-auto h-[30px] md:h-[40px]
-  }
+
+}
+
+#app {
+  overflow:hidden;
+  min-height: 100dvh;
+  width: 100vw;
 }

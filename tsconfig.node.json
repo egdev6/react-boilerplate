@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
+    "target": "ES2024",           // Establece el target a ES2024
+    "module": "Node16",         // Usa CommonJS porque es lo que usa Node.js
+    "moduleResolution": "node16",   // Resuelve módulos como lo hace Node.js
+    "lib": ["es2024"],            // Incluir las características de ES2024
+    "strict": true,
     "composite": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "resolveJsonModule": true
   },
-  "include": ["vite.config.ts", "mocks/*.ts", "mocks/**/*.json"]
+  "include": ["vite.config.ts", "src/mocks/*.ts", "src/mocks/**/*.json"]
 }

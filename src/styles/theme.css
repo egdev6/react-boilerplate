@@ -1,0 +1,36 @@
+@theme {
+  /* Global styles */
+  --color-primary: #830213;
+  --color-secondary: #d61e2b;
+  --color-accent: #b41520;
+  /* Dark mode */
+  --color-dark-background: #161616;
+  --color-dark-text: #f6f6f6;
+  --color-dark-yellow: #f0db4f;
+  --color-dark-grey-dark: #18191e;
+  --color-dark-grey-medium: #272830;
+  --color-dark-grey-light: #3b3d49;
+  /* Light theme */
+  --color-background: #ffffff;
+  --color-text: #1a1a1a;
+  --color-yellow: #f0db4f;
+  --color-grey-dark: #cccccc;
+  --color-grey-medium: #dddddd;
+  --color-grey-light: #eeeeee;
+  --font-primary: 'Wild Wolf', sans-serif;
+  --font-secondary: 'Segoe UI Regular', sans-serif;
+  --font-secondary-bold: 'Segoe UI Bold', sans-serif;
+  /* Animations */
+  --animate-fadeIn: fadeIn 400ms ease-in-out;
+  --animate-fadeOut: fadeOut 400ms ease-in-out;
+  --keyframes-fadeIn: {
+    '0%': { opacity: '0' },
+    '100%': { opacity: '1' },
+  };
+  --keyframes-fadeOut: {
+    '0%': { opacity: '1' },
+    '100%': { opacity: '0' },
+  };
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

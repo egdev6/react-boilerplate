@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Wild Wolf';
+  src: url('../assets/fonts/Wild_Wolf.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI Regular';
+  src: url('../assets/fonts/segoeuithis.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('../assets/fonts/segoeuibd.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

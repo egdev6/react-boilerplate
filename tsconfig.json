@@ -1,51 +1,54 @@
 {
-	"compilerOptions": {
-		"target": "ES2023",
-		"useDefineForClassFields": true,
-		"lib": ["ES2022", "DOM", "DOM.Iterable"],
-		"module": "ESNext",
-		"skipLibCheck": true,
-		"incremental": true,
-		"outDir": "./dist",
-		"types": ["vite-plugin-svgr/client"],
+  "compilerOptions": {
+    "target": "ES2024",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "incremental": true,
+    "outDir": "./dist",
+    "types": ["vite-plugin-svgr/client", "node"],
 
-		/* Bundler mode */
-		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react-jsx",
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
 
-		/* Linting */
-		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
 
-		/* Paths */
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"],
-			"@mocks/*": ["./mocks/*"],
-			"@api/*": ["./src/api/*"],
-			"@assets/*": ["./src/assets/*"],
-			"@system/*": ["./src/components/system/*"],
-			"@atoms/*": ["./src/components/ui/atoms/*"],
-			"@molecules/*": ["./src/components/ui/molecules/*"],
-			"@organisms/*": ["./src/components/ui/organisms/*"],
-			"@templates/*": ["./src/components/ui/templates/*"],
-			"@config/*": ["./src/config/*"],
-			"@constants/*": ["./src/constants/*"],
-			"@hooks/*": ["./src/hooks/*"],
-			"@lib/*": ["./src/lib/*"],
-			"@models/*": ["./src/models/*"],
-			"@pages/*": ["./src/pages/*"],
-			"@styles/*": ["./src/styles/*"],
-			"@utils/*": ["./src/utils/*"]
-		}
-	},
-	"include": ["src", "src/main.tsx", "postcss.config.cjs"],
-	"exclude": ["./mocks/*"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+    
+
+    /* Paths */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@app/*": ["./app/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@atoms/*": ["./src/components/atoms/*"],
+      "@molecules/*": ["./src/components/molecules/*"],
+      "@organisms/*": ["./src/components/organisms/*"],
+      "@templates/*": ["./src/components/templates/*"],
+      "@config/*": ["./src/config/*"],
+      "@api/*": ["./src/infrastructure/api/*"],
+      "@hooks/*": ["./src/infrastructure/hooks/*"],
+      "@models/*": ["src/infrastructure/models/*"],
+      "@store/*": ["./src/infrastructure/store/*"],
+      "@mocks/*": ["./src/mocks/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@tests/*": ["./src/tests/*"],
+      "@constants/*": ["./src/utils/constants/*"],
+      "@helpers/*": ["./src/utils/helpers/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["src/mocks/*"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
