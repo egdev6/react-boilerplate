@@ -38,7 +38,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#built-with">Built With</a></li>
-    <li><a href="#next-steps">Next steps</a></li>
+    <li><a href="#next-steps">Next Steps</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -55,7 +55,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## NEXT STEPS
+## Next Steps
 
 - [ ] UI Library (HeroUI)
 - [ ] Custom hook to get agent information and window resolution
