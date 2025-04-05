@@ -1,4 +1,4 @@
-# Egdev Boilerplate 2.0 WIP
+[react-boilerplate.jpg](https://postimg.cc/ZCffFWMR)
 
 ## Stack
 
