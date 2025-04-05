@@ -62,6 +62,7 @@
 - [ ] Storybook integration with automated stories creation
 - [ ] Landing Page with documentation
 - [ ] i18n for multilanguage
+- [ ] Testing setup with Vitest
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
