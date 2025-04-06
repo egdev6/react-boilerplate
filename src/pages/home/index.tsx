@@ -1,6 +1,7 @@
 import { usePeople } from '@hooks/use-people';
 import { useEffect, type FC } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Text from '@atoms/text'
 
 const HomePage: FC = () => {
   const { people} = usePeople()
@@ -12,7 +13,7 @@ const HomePage: FC = () => {
 
   return (
     <div>
-      <h1 className='text-text dark:text-dark-text'>Home Page</h1>
+      <Text as='h1'>Home Page</Text>
       <p className='text-text dark:text-dark-text'>Welcome to the home page!</p>
       <button onClick={() => navigate('/people')}>Go People</button>
     </div>

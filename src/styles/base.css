@@ -1,0 +1,36 @@
+@layer base {
+  body {
+    @apply text-[16px] leading-[18px];
+  }
+  h1{
+   @apply text-[3em] leading-[1.2em] md:text-[4em] md:leading-[1.2em];
+  }
+  
+  h2{
+    @apply text-[2.7em] leading-[1.2em] md:text-[3em];
+  }
+  
+  h3{
+    @apply text-[2.3em] leading-[1.2em] md:text-[2.5em];
+  }
+  
+  h4{
+    @apply text-[2em] leading-[1.2em] md:text-[2em];
+  }
+  
+  h5{
+    @apply text-[1.7em] leading-[1.2em] md:text-[1.5em];
+  }
+  
+  h6{
+    @apply text-[1.4em] leading-[1.2em] md:text-[1.2em];
+  }
+  
+  p,label{
+    @apply text-[0.9em] leading-[1.2em] md:text-[1em];
+  }
+
+  small{
+    @apply text-[0.8em] leading-[1] md:text-[0.875em] md:leading-[1.075em];
+  }
+}
