@@ -4,7 +4,11 @@ import { mergeConfig } from 'vite';
 const config: StorybookConfig = {
   stories: ['../src/**/**/**/*.mdx', '../src/components/**/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   staticDirs: ['../public', '../src/assets'],
-   addons: ['@storybook/addon-essentials'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-docs'],
+  managerHead: (head) => `
+    ${head}
+    <link rel="icon" type="image/png" href="../src/assets/images/logo.svg" sizes="192x192" />
+  `,
   docs: {
     autodocs: 'tag',
     defaultName: 'Documentation',

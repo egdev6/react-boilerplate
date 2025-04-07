@@ -1,7 +1,9 @@
 import React from 'react'
 import type { Preview } from '@storybook/react'
 import { Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+import { ArgTypes } from '@storybook/addon-docs';
 import '@styles/global.css';
+import theme from './theme';
 
 const preview: Preview = {
   parameters: {
@@ -13,19 +15,22 @@ const preview: Preview = {
     },
     docs: {
       autodocs: true,
+      theme: theme,
       page: () => (
         <>
           <Title />
           <Subtitle />
           <Description />
           <Primary />
-          <Controls />
+          <ArgTypes />
           <Stories />
         </>
       ),
     },
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
+  decorators: [
+  ],
 };
 
 export default preview;

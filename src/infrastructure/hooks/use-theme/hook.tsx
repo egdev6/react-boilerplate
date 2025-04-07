@@ -17,17 +17,13 @@ const useTheme = () => {
   }, [theme, applyTheme]);
   
   useEffect(() => {
-    // Detectar la preferencia del sistema operativo
     const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'dark'
       : 'light';
       console.log('systemTheme', systemTheme);
 
-    // Establecer el tema, primero usando lo guardado en localStorage (si existe), si no se usa el tema del sistema
     const saved = localStorage.getItem('theme') as Theme | null;
-    console.log('saved', saved);
     const themeToApply = saved ?? systemTheme;
-    console.log(themeToApply) // Si no hay preferencia guardada, usa el tema del sistema
     applyTheme(themeToApply);
 
     // Aplicar la clase correspondiente al HTML

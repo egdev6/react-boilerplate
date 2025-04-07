@@ -5,16 +5,16 @@ export const textVariants = cva(
   {
     variants: {
       as: {
-        h1: ["text-4xl"],
-        h2: ["text-3xl"],
-        h3: ["text-2xl"],
-        h4: ["text-xl"],
-        h5: ["text-lg"],
-        h6: ["text-base"],
+        h1: ["text-7xl"],
+        h2: ["text-6xl"],
+        h3: ["text-5xl"],
+        h4: ["text-4xl"],
+        h5: ["text-3xl"],
+        h6: ["text-2xl"],
         p: ["text-base"],
         span: ["text-base"],
-        label: ["text-sm"],
-        small: ["text-xs"],
+        label: ["text-base"],
+        small: ["text-sm"],
       },
       color: {
         text: ["text-text", "dark:text-dark-text"],
@@ -28,6 +28,7 @@ export const textVariants = cva(
         black: ["text-black"],
       },
       weight: {
+        default: ["font-normal"],
         thin: ["font-thin"],
         extralight: ["font-extralight"],
         light: ["font-light"],
@@ -39,6 +40,7 @@ export const textVariants = cva(
         black: ["font-black"],
       },
       font: {
+        default: ["font-secondary"],
         primary: ["font-primary"],
         secondary: ["font-secondary"],
         secondaryBold: ["font-secondary-bold"],
