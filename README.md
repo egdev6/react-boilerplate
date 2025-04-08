@@ -54,9 +54,9 @@
 
 ## Next Steps
 
-- [ ] UI Library (HeroUI)
-- [ ] Custom hook to get agent information and window resolution
+- [ ] UI Library (Shadcn)
 - [ ] Storybook integration with automated stories creation
+- [ ] Custom hook to get agent information and window resolution
 - [ ] Landing Page with documentation
 - [ ] i18n for multilanguage
 - [ ] Testing setup with Vitest
