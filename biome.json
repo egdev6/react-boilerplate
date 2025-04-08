@@ -2,7 +2,7 @@
   "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
   "files": {
     "ignore": ["node_modules", "dist", ".vscode"],
-    "include": ["src/**/*.{js,jsx,ts,tsx}", "vite.config.ts"]
+    "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx", "vite.config.ts"]
   },
   "formatter": {
     "attributePosition": "auto",
