@@ -1,15 +1,15 @@
+import Text from '@atoms/text';
 import { usePeople } from '@hooks/use-people';
-import { useEffect, type FC } from 'react';
+import { type FC, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Text from '@atoms/text'
 
 const HomePage: FC = () => {
-  const { people} = usePeople()
-  const navigate = useNavigate()
+  const { people } = usePeople();
+  const navigate = useNavigate();
 
-  useEffect(() =>{
-    console.log(people)
-  },[people])
+  useEffect(() => {
+    console.log(people);
+  }, [people]);
 
   return (
     <div>

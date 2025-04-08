@@ -1,15 +1,8 @@
-
 import useLoadingStore from './store';
 
 const useLoading = () => {
-  const {
-    pageLoading,
-    apiFetching,
-    formSubmitting,
-    setPageLoading,
-    setApiFetching,
-    setFormSubmitting,
-  } = useLoadingStore();
+  const { pageLoading, apiFetching, formSubmitting, setPageLoading, setApiFetching, setFormSubmitting } =
+    useLoadingStore();
 
   return {
     pageLoading,
@@ -17,7 +10,7 @@ const useLoading = () => {
     formSubmitting,
     setPageLoading,
     setApiFetching,
-    setFormSubmitting,
+    setFormSubmitting
   };
 };
 

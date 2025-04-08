@@ -13,7 +13,7 @@ export type TailwindColor =
   | 'white'
   | 'black';
 
-export type TailwindFontWeight = 
+export type TailwindFontWeight =
   | 'thin'
   | 'extralight'
   | 'light'
@@ -22,6 +22,6 @@ export type TailwindFontWeight =
   | 'semibold'
   | 'bold'
   | 'extrabold'
-  | 'black'
+  | 'black';
 
-export type TailwindTextTags = 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | 'label' | 'small'
+export type TailwindTextTags = 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | 'label' | 'small';

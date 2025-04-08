@@ -9,6 +9,6 @@ export default [
       const data = await import('./data/people.json');
       res.setHeader('Content-Type', 'application/json');
       res.end(JSON.stringify(data));
-    },
-  },
+    }
+  }
 ] as MockHandler[];
