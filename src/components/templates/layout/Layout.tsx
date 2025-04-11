@@ -1,7 +1,7 @@
-import { type FC, type JSX } from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from '@organisms/header';
 import Footer from '@organisms/footer';
+import Header from '@organisms/header';
+import type { FC, JSX } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const Layout: FC = (): JSX.Element | null => {
   return (

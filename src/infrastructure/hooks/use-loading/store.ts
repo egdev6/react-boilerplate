@@ -1,13 +1,13 @@
-import { create } from "zustand";
-import type { LoadingStore } from "./types";
+import { create } from 'zustand';
+import type { LoadingStore } from './types';
 
 const useLoadingStore = create<LoadingStore>((set) => ({
   pageLoading: false,
-  apiFetching: false,
+  apiFetching: true,
   formSubmitting: false,
   setPageLoading: (loading) => set({ pageLoading: loading }),
   setApiFetching: (fetching) => set({ apiFetching: fetching }),
-  setFormSubmitting: (submitting) => set({ formSubmitting: submitting }),
+  setFormSubmitting: (submitting) => set({ formSubmitting: submitting })
 }));
 
 export default useLoadingStore;

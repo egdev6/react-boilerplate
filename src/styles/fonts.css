@@ -1,24 +1,27 @@
 @font-face {
-  font-family: 'Wild Wolf';
-  src: url('../assets/fonts/Wild_Wolf.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'WildWolf';
+    src: url('/fonts/WildWolfRegular.woff2') format('woff2'),
+        url('/fonts/WildWolfRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Segoe UI Regular';
-  src: url('../assets/fonts/segoeuithis.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'SegoeUIBold';
+    src: url('/fonts/SegoeUIThis-Bold.woff2') format('woff2'),
+        url('/fonts/SegoeUIThis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
-
 
 @font-face {
-  font-family: 'Segoe UI Bold';
-  src: url('../assets/fonts/segoeuibd.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUIThis.woff2') format('woff2'),
+        url('/fonts/SegoeUIThis.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+

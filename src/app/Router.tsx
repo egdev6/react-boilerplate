@@ -1,6 +1,6 @@
-import Layout from '@templates/layout';
 import Loader from '@atoms/loader';
-import { lazy, Suspense } from 'react';
+import Layout from '@templates/layout';
+import { Suspense, lazy } from 'react';
 import { Navigate, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const HomePage = lazy(() => import('@pages/home'));
@@ -16,11 +16,11 @@ const Router = createBrowserRouter(
         </Suspense>
       }
     >
-      <Route index element={<HomePage />} />
+      <Route index={true} element={<HomePage />} />
       <Route path='people' element={<PeoplePage />} />
-      <Route path='*' element={<Navigate replace to='/' />} />
-    </Route>,
-  ),
+      <Route path='*' element={<Navigate replace={true} to='/' />} />
+    </Route>
+  )
 );
 
 export default Router;
