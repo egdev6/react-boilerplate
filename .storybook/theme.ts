@@ -1,7 +1,7 @@
 import { create } from '@storybook/theming/create';
 
 export default create({
-   base: 'light',
+   base: 'dark',
    // Typography
    fontBase: 'SegoeUI',
    fontCode: 'monospace',
@@ -10,13 +10,12 @@ export default create({
    brandTitle: 'Egdev Storybook',
    brandUrl: 'https://github.com/egdev6',
    brandImage: '/images/logo.svg',
-   brandTarget: '_self',
 
    // Colors
-   colorPrimary: '#830213',
+   colorPrimary: '#d61e2b',
    colorSecondary: '#d61e2b',
 
    // Toolbar
-   barSelectedColor: '#830213',
+   barSelectedColor: '#FFFFFF',
    barHoverColor: '#d61e2b',
 });

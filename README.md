@@ -36,6 +36,8 @@
   <ol>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#next-steps">Next Steps</a></li>
+    <li><a href="#component-creator">Component creator</a></li>
+    <li><a href="#scripts">Useful Scripts</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -44,7 +46,7 @@
 
 ## Built With
 
-<div align="center">
+<div align="center" id='built-with'>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Zustand](https://img.shields.io/badge/zustand-brown?style=for-the-badge&logo=react&logoColor=white) ![Lefthook](https://img.shields.io/badge/lefthook-c90e14?style=for-the-badge&logo=lefthook&logoColor=white) ![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white) ![Biome](https://img.shields.io/badge/Biome-60A5FA?style=for-the-badge&logo=biome&logoColor=white) ![PNPM](https://img.shields.io/badge/Pnpm-gray?style=for-the-badge&logo=pnpm&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-9BBF1F?style=for-the-badge&logo=vitest&logoColor=white)
 
@@ -53,19 +55,88 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Next Steps
+<div id='next-steps'>
 
+- [X] Storybook integration with automated stories creation and addons (a11y, addon/docs and react-docgen-typescript)
+- [X] Custom tools to component, pages, hooks and service files creation (component-creator)
+- [X] Custom script to refresh Storybook with changes in files (components/**/*.ts,components/**/*.tsx)
 - [ ] UI Library (Shadcn)
-- [ ] Storybook integration with automated stories creation
 - [ ] Custom hook to get agent information and window resolution
 - [ ] Landing Page with documentation
 - [ ] i18n for multilanguage
 - [ ] Testing setup with Vitest
 
+</div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Component Creator
+<div id='component-creator'>
+
+```
+pnpm run component-creator
+```
+
+Tool for feature creation based on templates
+
+	•	Components -> components/*
+	  Name.tsx: base component file
+	  types.ts: file with the types
+	  Name.stories.tsx: file prepared for autodocumentation in Storybook
+	  index.ts: file exporting everything
+
+	•	Pages -> pages/*
+	  NamePage.tsx: file with the view logic
+	  NamePageView.tsx: view presentation component
+	  index.ts: file exporting everything
+	  Router.tsx: adds the route to the app/Router file with lazy loading import
+
+	•	Hook -> infrastructure/hooks/
+	  hook.tsx: file containing the custom hook
+	  store.ts: file with Zustand state
+	  types.ts: file with type definitions
+	  index.ts: file exporting everything
+
+	•	Service -> various folders
+	  nameService.ts: file with the API call, ready for mocking
+	  types.ts: type definitions for request and response
+	  mockServer.ts: prepares the mock handler for the API call
+	  data/name.json: mock response data
+
+All of this is generated via CLI with just 3 simple prompts.
+
+You can customize the generated templates to your liking in tools/component-creator/plop-templates.
+
+</div>
+
+## Useful commands:
+
+<div id='scripts'
+
+	•	Starts the server in development mode
+
+  ```
+  pnpm run dev
+  ```
+	•	Reinstalls dependencies and clears React’s cache
+
+  ```
+  pnpm run rebuild
+  ```
+	•	Starts the Storybook server in watch mode, listening for file changes and refreshing with those updates
+  
+  ```
+  pnpm run storybook-watch
+  ```
+	•	Clears Storybook’s cache
+
+  ```
+  pnpm run storybook-clean-cache
+  ```
+</div>
 
 ## Contact
 
-<div align="center">
+<div align="center" id='contact'>
 
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/egdev/)
 [![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/egdev6)

@@ -1,6 +1,6 @@
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import mockSimple from 'vite-plugin-mock-simple';
 import svgr from 'vite-plugin-svgr';
@@ -10,7 +10,6 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    mockSimple(mockServer),
     svgr({
       svgrOptions: {
         ref: true,
@@ -18,7 +17,8 @@ export default defineConfig({
         titleProp: true
       },
       include: '**/*.svg'
-    })
+    }),
+    mockSimple(mockServer)
   ],
   resolve: {
     alias: {
