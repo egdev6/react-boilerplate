@@ -94,23 +94,24 @@ npx storybook-watch
 
 ## Useful commands:
 
-<div id='scripts'
+<div id='scripts'>
 
-	•	Starts the server in development mode
+Starts the server in development mode
 
   ```
   pnpm run dev
   ```
-	•	Reinstalls dependencies and clears React’s cache
+Reinstalls dependencies and clears React’s cache
 
   ```
   pnpm run rebuild
   ```
-	•	Clears Storybook’s cache
+Clears Storybook’s cache
 
   ```
   pnpm run storybook-clean-cache
   ```
+
 </div>
 
 ## Contact
