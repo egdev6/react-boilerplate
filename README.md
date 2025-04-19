@@ -73,7 +73,7 @@
 
 <div id='component-creator'>
 
-More informations here -> https://github.com/egdev6/component-creator
+More information here -> https://github.com/egdev6/component-creator
 
 ```
 npx component-creator
