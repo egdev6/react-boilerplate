@@ -5,4 +5,4 @@ export type LoadingStore = {
   setPageLoading: (loading: boolean) => void;
   setApiFetching: (fetching: boolean) => void;
   setFormSubmitting: (submitting: boolean) => void;
-}
+};

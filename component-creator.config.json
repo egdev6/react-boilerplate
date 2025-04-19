@@ -1,0 +1,21 @@
+{
+	"config": {
+		"extension": "ts",
+		"atomic": true
+	},
+	"components": "src/components",
+	"hooks": "src/infrastructure/hooks",
+	"pages": {
+		"base": "src/pages",
+		"routes": "src/app/Router.tsx"
+	},
+	"services": {
+		"base": "src/infrastructure/api",
+		"axios": "src/config/axios",
+		"types": "src/infrastructure/models/api",
+		"mocks": {
+			"data": "src/mocks/data",
+			"server": "src/mocks/mocksServer.ts"
+		}
+	}
+}

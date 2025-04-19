@@ -1,0 +1,9 @@
+@layer base {
+  body {
+    @apply text-[16px] leading-[18px];
+  }
+
+  #app {
+    @apply overflow-hidden min-h-dvh w-full
+  }
+}

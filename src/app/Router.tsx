@@ -1,26 +1,28 @@
-import Layout from '@templates/layout';
-import Loader from '@atoms/loader';
-import { lazy, Suspense } from 'react';
-import { Navigate, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Layout from "@templates/layout";
+import { Suspense, lazy } from "react";
+import {
+	Navigate,
+	Route,
+	createBrowserRouter,
+	createRoutesFromElements,
+} from "react-router-dom";
 
-const HomePage = lazy(() => import('@pages/home'));
-const PeoplePage = lazy(() => import('@pages/people'));
+// -- plop hook for import -- //
 
 const Router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route
-      path='/'
-      element={
-        <Suspense fallback={<Loader />}>
-          <Layout />
-        </Suspense>
-      }
-    >
-      <Route index element={<HomePage />} />
-      <Route path='people' element={<PeoplePage />} />
-      <Route path='*' element={<Navigate replace to='/' />} />
-    </Route>,
-  ),
+	createRoutesFromElements(
+		<Route
+			path="/"
+			element={
+				<Suspense fallback={<h1>Loading...</h1>}>
+					<Layout />
+				</Suspense>
+			}
+		>
+			{/* -- plop hook for route -- */}
+			<Route path="*" element={<Navigate replace={true} to="/" />} />
+		</Route>,
+	),
 );
 
 export default Router;
