@@ -81,8 +81,7 @@ npx component-creator
 
 </div>
 
-## Strorybook watch
-
+## Storybook watch
 <div id='storybook-watch'>
 
 More informations here -> https://github.com/egdev6/storybook-watch
