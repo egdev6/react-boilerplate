@@ -1,9 +1,0 @@
-import { create } from "zustand";
-import type { {{pascalNombre}}Store } from "./types";
-
-const use{{pascalNombre}}Store = create<{{pascalNombre}}Store>((set) => ({
-  test: "",
-  setTest: (value) => set({ test: value })
-}));
-
-export default use{{pascalNombre}}Store;

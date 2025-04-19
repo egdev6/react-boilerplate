@@ -36,7 +36,8 @@
   <ol>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#next-steps">Next Steps</a></li>
-    <li><a href="#component-creator">Component creator</a></li>
+    <li><a href="#component-creator">Egdev Component creator</a></li>
+		<li><a href="#storybook-watch">Storybook watch</a></li>
     <li><a href="#scripts">Useful Scripts</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -60,7 +61,6 @@
 - [X] Storybook integration with automated stories creation and addons (a11y, addon/docs and react-docgen-typescript)
 - [X] Custom tools to component, pages, hooks and service files creation (component-creator)
 - [X] Custom script to refresh Storybook with changes in files (components/**/*.ts,components/**/*.tsx)
-- [ ] UI Library (Shadcn)
 - [ ] Custom hook to get agent information and window resolution
 - [ ] Landing Page with documentation
 - [ ] i18n for multilanguage
@@ -69,42 +69,27 @@
 </div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Component Creator
+## Egdev Component Creator
+
 <div id='component-creator'>
 
+More informations here -> https://github.com/egdev6/component-creator
+
 ```
-pnpm run component-creator
+npx component-creator
 ```
 
-Tool for feature creation based on templates
+</div>
 
-	•	Components -> components/*
-	  Name.tsx: base component file
-	  types.ts: file with the types
-	  Name.stories.tsx: file prepared for autodocumentation in Storybook
-	  index.ts: file exporting everything
+## Strorybook watch
 
-	•	Pages -> pages/*
-	  NamePage.tsx: file with the view logic
-	  NamePageView.tsx: view presentation component
-	  index.ts: file exporting everything
-	  Router.tsx: adds the route to the app/Router file with lazy loading import
+<div id='storybook-watch'>
 
-	•	Hook -> infrastructure/hooks/
-	  hook.tsx: file containing the custom hook
-	  store.ts: file with Zustand state
-	  types.ts: file with type definitions
-	  index.ts: file exporting everything
+More informations here -> https://github.com/egdev6/storybook-watch
 
-	•	Service -> various folders
-	  nameService.ts: file with the API call, ready for mocking
-	  types.ts: type definitions for request and response
-	  mockServer.ts: prepares the mock handler for the API call
-	  data/name.json: mock response data
-
-All of this is generated via CLI with just 3 simple prompts.
-
-You can customize the generated templates to your liking in tools/component-creator/plop-templates.
+```
+npx storybook-watch
+```
 
 </div>
 
@@ -121,11 +106,6 @@ You can customize the generated templates to your liking in tools/component-crea
 
   ```
   pnpm run rebuild
-  ```
-	•	Starts the Storybook server in watch mode, listening for file changes and refreshing with those updates
-  
-  ```
-  pnpm run storybook-watch
   ```
 	•	Clears Storybook’s cache
 
