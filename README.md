@@ -81,11 +81,10 @@ npx compilot-cli
 
 </div>
 
-## Strorybook watch
-
+## Storybook watch
 <div id='storybook-watch'>
 
-More informations here -> https://github.com/egdev6/storybook-watch
+More information here -> https://github.com/egdev6/storybook-watch
 
 ```
 npx storybook-watch
