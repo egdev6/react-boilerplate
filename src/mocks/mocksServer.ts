@@ -11,5 +11,5 @@ export default [
 			res.end(JSON.stringify(data));
 		},
 	},
-	// -- plop hook for mocks -- //
+	//-- plop hook for mocks -- //
 ] as MockHandler[];

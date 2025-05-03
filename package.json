@@ -10,14 +10,16 @@
 		"optimize": "vite optimize",
 		"analyze": "vite build --mode production --reportCompressedSize",
 		"clean": "rm -rf dist node_modules pnpm-lock.yaml package-lock.json && npm cache clean --force",
-		"rebuild": "pnpm run clean && pnpm install",
+		"reinstall": "pnpm run clean && pnpm install",
 		"biome-all": "biome check --write .",
 		"biome-staged": "biome check --write --staged --verbose",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
-		"storybook-clean-cache": "rm -rf node_modules/.cache/storybook"
+		"storybook-clean-cache": "rm -rf node_modules/.cache/storybook",
+		"pre-commit": "biome-staged && tsc"
 	},
 	"dependencies": {
+		"@egdev6/compilot-cli": "1.0.6",
 		"@radix-ui/react-menubar": "1.1.7",
 		"@radix-ui/react-slot": "1.2.0",
 		"@tanstack/react-query": "5.72.2",
@@ -35,8 +37,8 @@
 		"zustand": "5.0.3"
 	},
 	"devDependencies": {
-		"@egdev6/component-creator": "1.0.3",
 		"@biomejs/biome": "1.9.4",
+		"@egdev6/component-creator": "1.0.3",
 		"@evilmartians/lefthook": "1.11.9",
 		"@storybook/addon-a11y": "8.6.12",
 		"@storybook/addon-docs": "8.6.12",

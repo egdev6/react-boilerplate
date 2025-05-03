@@ -78,7 +78,7 @@
         "noUnsafeFinally": "error",
         "noUnusedVariables": "error",
         "useArrayLiterals": "off",
-        "useExhaustiveDependencies": "warn",
+        "useExhaustiveDependencies": "off",
         "useHookAtTopLevel": "error",
         "useIsNan": "error",
         "useJsxKeyInIterable": "error"
@@ -134,7 +134,7 @@
         "noEmptyBlockStatements": "error",
         "noEmptyInterface": "error",
         "noExtraNonNullAssertion": "error",
-        "noExplicitAny": "warn",
+        "noExplicitAny": "off",
         "noFallthroughSwitchClause": "error",
         "noFunctionAssign": "error",
         "noGlobalAssign": "error",

@@ -7,7 +7,7 @@ import {
 	createRoutesFromElements,
 } from "react-router-dom";
 
-// -- plop hook for import -- //
+//-- plop hook for import --//
 
 const Router = createBrowserRouter(
 	createRoutesFromElements(
