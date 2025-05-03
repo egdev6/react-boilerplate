@@ -2,7 +2,7 @@
   "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
   "files": {
     "ignore": ["node_modules", "dist", ".vscode"],
-    "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx", "vite.config.ts"]
+    "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
   },
   "formatter": {
     "attributePosition": "auto",
@@ -78,7 +78,7 @@
         "noUnsafeFinally": "error",
         "noUnusedVariables": "error",
         "useArrayLiterals": "off",
-        "useExhaustiveDependencies": "warn",
+        "useExhaustiveDependencies": "off",
         "useHookAtTopLevel": "error",
         "useIsNan": "error",
         "useJsxKeyInIterable": "error"
@@ -134,7 +134,7 @@
         "noEmptyBlockStatements": "error",
         "noEmptyInterface": "error",
         "noExtraNonNullAssertion": "error",
-        "noExplicitAny": "warn",
+        "noExplicitAny": "off",
         "noFallthroughSwitchClause": "error",
         "noFunctionAssign": "error",
         "noGlobalAssign": "error",

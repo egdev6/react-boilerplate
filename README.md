@@ -69,14 +69,14 @@
 </div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Egdev Component Creator
+## Compilot CLI
 
 <div id='component-creator'>
 
-More information here -> https://github.com/egdev6/component-creator
+More informations here -> https://github.com/egdev6/compilot-cli/
 
 ```
-npx component-creator
+npx compilot-cli
 ```
 
 </div>

@@ -6,7 +6,7 @@ const rootElement = document.getElementById('root');
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <App />
+      {/*-- plop hook for providers --*/}<App/>
     </React.StrictMode>
   );
 }
