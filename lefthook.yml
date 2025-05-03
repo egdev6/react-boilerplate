@@ -2,4 +2,4 @@ pre-commit:
   parallel: true
   commands:
     pre-commit-script:
-      run: npm run pre-commit"
+      run: "pnpm run pre-commit"
