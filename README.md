@@ -61,6 +61,7 @@
 - [X] Storybook integration with automated stories creation and addons (a11y, addon/docs and react-docgen-typescript)
 - [X] Custom tools to component, pages, hooks and service files creation (component-creator)
 - [X] Custom script to refresh Storybook with changes in files (components/**/*.ts,components/**/*.tsx)
+- [X] Dark/Light theme + Storybook switch theme
 - [ ] Custom hook to get agent information and window resolution
 - [ ] Landing Page with documentation
 - [ ] i18n for multilanguage
