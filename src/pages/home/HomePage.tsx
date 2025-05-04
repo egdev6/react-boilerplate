@@ -4,7 +4,7 @@ import type { HomePageProps } from './types';
 
 // Here you can add your page logic
 const HomePage: FC<HomePageProps> = () => {
-  const name = 'Home';
+  const name = 'Egdev React Boileplate V2';
   return <HomePageView name={name} />;
 };
 

@@ -25,7 +25,7 @@
 		}
 	},
 	"hooks": {
-		"base": "src/hooks",
+		"base": "src/infrastructure/hooks",
 		"context": {
 			"file": "src/app/main.tsx",
 			"mode": "tree"

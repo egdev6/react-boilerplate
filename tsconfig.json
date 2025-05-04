@@ -43,7 +43,8 @@
       "@styles/*": ["./src/styles/*"],
       "@tests/*": ["./src/tests/*"],
       "@constants/*": ["./src/utils/constants/*"],
-      "@helpers/*": ["./src/utils/helpers/*"]
+      "@helpers/*": ["./src/utils/helpers/*"],
+      "@functions/*": ["./src/utils/functions/*"]
     }
   },
   "include": ["src"],

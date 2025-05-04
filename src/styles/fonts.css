@@ -8,18 +8,18 @@
 }
 
 @font-face {
-    font-family: 'SegoeUIBold';
-    src: url('/fonts/SegoeUIThis-Bold.woff2') format('woff2'),
-        url('/fonts/SegoeUIThis-Bold.woff') format('woff');
+    font-family: 'UniviaBold';
+    src: url('/fonts/UniviaPro-Bold.woff2') format('woff2'),
+        url('/fonts/UniviaPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SegoeUI';
-    src: url('/fonts/SegoeUIThis.woff2') format('woff2'),
-        url('/fonts/SegoeUIThis.woff') format('woff');
+    font-family: 'Univia';
+    src: url('/fonts/UniviaPro-Regular.woff2') format('woff2'),
+        url('/fonts/UniviaPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

@@ -3,7 +3,7 @@ import { Suspense, lazy } from 'react';
 import { Navigate, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 //-- plop hook for import --//
-export const HomePage = lazy(() => import('src/pages/home'));
+export const HomePage = lazy(() => import('@pages/home'));
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +16,7 @@ const Router = createBrowserRouter(
       }
     >
       {/* -- plop hook for route -- */}
-      <Route path='home' element={<HomePage />} />
+      <Route index={true} element={<HomePage />} />
       <Route path='*' element={<Navigate replace={true} to='/' />} />
     </Route>
   )
