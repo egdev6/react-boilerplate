@@ -1,9 +1,12 @@
+import { cn } from '@helpers/classname';
 import { type TextProps, textVariants } from './types';
 
-const Text = ({ tag, color, prominent, className, children, ...rest }: TextProps) => {
-  const Component = tag ?? 'p';
+const Text = ({ tag = 'p', size, color, prominent, className, children, ...rest }: TextProps) => {
+  const Component = tag;
+  const value = size ?? tag;
+
   return (
-    <Component className={textVariants({ tag, color, prominent, className })} {...rest}>
+    <Component className={cn(textVariants({ size: value, color, prominent }), className)} {...rest}>
       {children}
     </Component>
   );
