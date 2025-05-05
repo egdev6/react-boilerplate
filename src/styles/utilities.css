@@ -1,15 +1,14 @@
 
 @layer utilities {
   /* Typography */
-  .text-h1 { font-size: var(--typography-h1); line-height: 1.2; }
-  .text-h2 { font-size: var(--typography-h2); line-height: 1.2;}
-  .text-h3 { font-size: var(--typography-h3); line-height: 1.2;}
-  .text-h4 { font-size: var(--typography-h4); line-height: 1.2;}
-  .text-h5 { font-size: var(--typography-h5); line-height: 1.2;}
-  .text-h6 { font-size: var(--typography-h6); line-height: 1.2;}
-  .text-base { font-size: var(--typography-base); line-height: 1.2;}
-  .text-small { font-size: var(--typography-small); line-height: 1.2;}
-
+  .fs-h1 { font-size: var(--text-h1); line-height: 1.2;}
+  .fs-h2 { font-size: var(--text-h2); line-height: 1.2;}
+  .fs-h3 { font-size: var(--text-h3); line-height: 1.2;}
+  .fs-h4 { font-size: var(--text-h4); line-height: 1.2;}
+  .fs-h5 { font-size: var(--text-h5); line-height: 1.2;}
+  .fs-h6 { font-size: var(--text-h6); line-height: 1.2;}
+  .fs-base { font-size: var(--text-base); line-height: 1.2;}
+  .fs-small { font-size: var(--text-small); line-height: 1.2;}
   .font-primary { font-family: var(--font-primary); }
   .font-secondary { font-family: var(--font-secondary); }
   .font-secondary-bold {
@@ -17,10 +16,11 @@
     font-weight: var(--font-weight-bold);
   }
   /* Storybook dark mode */
-  html.dark .docs-story, html.dark .sb-show-main{
+  .dark .docs-story, .sb-show-main.dark{
     @apply !bg-[var(--color-dark-background)];
   }
-    html.light .docs-story, html.light .sb-show-main{
+  
+  .light .docs-story, .sb-show-main.light{
     @apply !bg-[var(--color-background)];
   }
 }
