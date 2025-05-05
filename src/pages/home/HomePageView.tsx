@@ -1,4 +1,5 @@
 import Logo from '@assets/images/logo.svg';
+import Text from '@atoms/text';
 import type { FC } from 'react';
 import type { HomePageViewProps } from './types';
 
@@ -10,9 +11,15 @@ const HomePageView: FC<HomePageViewProps> = (props) => {
       <div className='w-[600px]'>
         <Logo />
       </div>
-      <h1 className='w-auto border-t-4 border-b-4 border-accent text-[var(--color-text) dark:text-[var(--color-dark-text)] text-h1 py-2'>
-        {name}
-      </h1>
+      <div className='w-auto border-t-4 border-b-4 border-accent text-[var(--color-text) dark:text-[var(--color-dark-text)] text-h1 py-2'>
+        <Text
+          tag='h1'
+          color='primary'
+          className='text-center text-[var(--color-text)] dark:text-[var(--color-dark-text)]'
+        >
+          {name}
+        </Text>
+      </div>
     </div>
   );
 };
