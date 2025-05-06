@@ -1,4 +1,4 @@
-import { cn } from '@helpers/classname';
+import { cn } from '@helpers/utils';
 import { type TextProps, textVariants } from './types';
 
 const Text = ({ tag = 'p', size, color, prominent, className, children, ...rest }: TextProps) => {
