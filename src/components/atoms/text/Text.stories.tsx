@@ -20,3 +20,11 @@ export const Default: Story = {
     children: 'Lorem ipsum'
   }
 };
+
+export const PrimaryH1: Story = {
+  args: {
+    children: 'Lorem ipsum',
+    tag: 'h1',
+    className: 'font-primary'
+  }
+};
