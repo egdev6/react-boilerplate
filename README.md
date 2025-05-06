@@ -101,7 +101,7 @@ Starts the server in development mode
 Reinstalls dependencies and clears React’s cache
 
   ```
-  pnpm run rebuild
+  pnpm run reinstall
   ```
 Clears Storybook’s cache
 
