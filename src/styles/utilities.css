@@ -15,12 +15,4 @@
     font-family: var(--font-secondary-bold);
     font-weight: var(--font-weight-bold);
   }
-  /* Storybook dark mode */
-  .dark .docs-story, .sb-show-main.dark{
-    @apply !bg-[var(--color-dark-background)];
-  }
-  
-  .light .docs-story, .sb-show-main.light{
-    @apply !bg-[var(--color-background)];
-  }
 }
