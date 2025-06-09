@@ -12,7 +12,7 @@
 		},
 		"files": {
 			"types": "file",
-			"stories": true,
+			"stories": false,
 			"test": false
 		}
 	},
@@ -25,16 +25,16 @@
 		}
 	},
 	"hooks": {
-		"base": "src/infrastructure/hooks",
+		"base": "src/hooks",
 		"context": {
 			"file": "src/app/main.tsx",
 			"mode": "tree"
 		}
 	},
 	"services": {
-		"base": "src/infrastructure/api",
+		"base": "src/services",
 		"axios": "src/config/axios",
-		"types": "src/infrastructure/models/api",
+		"types": "src/models/api",
 		"mocks": {
 			"enabled": true,
 			"data": "src/mocks/data",
