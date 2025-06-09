@@ -15,7 +15,7 @@ const HomePageView: FC<HomePageViewProps> = (props) => {
         'border border-gray-light-500 dark:border-gray-dark-700 shadow-md rounded-md'
       )}
     >
-      <div className='w-[500px]'>
+      <div className='max-w-[500px] w-full'>
         <Logo />
       </div>
       <div className='w-auto border-t-4 border-b-4 border-accent text-text-light dark:text-text-dark text-h1 py-2'>
