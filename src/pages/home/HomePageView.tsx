@@ -8,7 +8,7 @@ import type { HomePageViewProps } from './types';
 const HomePageView: FC<HomePageViewProps> = (props) => {
   const { name } = props;
   return (
-    <div
+    <main
       className={cn(
         'w-auto max-w-[800px] p-12 flex flex-col items-center justify-center gap-6 h-full',
         'bg-gray-light-800 dark:bg-gray-dark-800 bg-clip-padding backdrop-filter backdrop-blur-sm',
