@@ -35,6 +35,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#built-with">Built With</a></li>
+    <li><a href="#installation">Installation</a></li>
     <li><a href="#next-steps">Next Steps</a></li>
     <li><a href="#component-creator">Egdev Component creator</a></li>
 		<li><a href="#storybook-watch">Storybook watch</a></li>
@@ -54,6 +55,48 @@
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔧 Installation
+
+1 - Clone the repository
+
+2 - Use node version
+
+```
+nvm use
+```
+
+3 - Install dependencies
+
+NPM
+
+```
+npm install
+```
+
+or
+
+PNPM
+```
+pnpm install
+```
+
+4 - Run the boilerplate
+
+NPM
+
+```
+npm run dev
+```
+
+or
+
+PNPM
+```
+pnpm run dev
+```
+
+5 - Let's coding and enjoy!
 
 ## Last Updates
 <div id='next-steps'>
