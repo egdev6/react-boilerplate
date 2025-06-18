@@ -37,8 +37,7 @@
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#next-steps">Next Steps</a></li>
-    <li><a href="#component-creator">Egdev Component creator</a></li>
-		<li><a href="#storybook-watch">Storybook watch</a></li>
+    <li><a href="#component-creator">Compilot cli</a></li>
     <li><a href="#scripts">Useful Scripts</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -55,6 +54,8 @@
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<div id='installation'>
 
 ## 🔧 Installation
 
@@ -97,6 +98,8 @@ pnpm run dev
 ```
 
 5 - Let's coding and enjoy!
+
+</div>
 
 ## Last Updates
 <div id='next-steps'>
