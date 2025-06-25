@@ -23,7 +23,7 @@ const HomePageView: FC<HomePageViewProps> = (props) => {
           {name}
         </Text>
       </div>
-    </div>
+    </main>
   );
 };
 
