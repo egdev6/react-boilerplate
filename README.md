@@ -150,7 +150,7 @@ Clears Storybook’s cache
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[stars-shield]: https://img.shields.io/github/stars/egdev6/egdev-react-boilerplate.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/egdev6/egdev-react-boilerplate.svg?style=for-the-badge&cacheBust=1
 [stars-url]: https://github.com/egdev6/egdev-react-boilerplate/stargazers
 [issues-shield]: https://img.shields.io/github/issues/egdev6/egdev-react-boilerplate.svg?style=for-the-badge
 [issues-url]: https://github.com/egdev6/egdev-react-boilerplate/issues
