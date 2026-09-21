@@ -13,6 +13,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![License][license-shield]][license-url]
 
 </div>
 <!-- PROJECT LOGO -->
@@ -147,15 +148,22 @@ Clears Storybook’s cache
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+---
+
+## License
+
+Distributed under the [MIT License][license].
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
+[license]: LICENSE
 [stars-shield]: https://img.shields.io/github/stars/egdev6/egdev-react-boilerplate.svg?style=for-the-badge&cacheBust=1
 [stars-url]: https://github.com/egdev6/egdev-react-boilerplate/stargazers
 [issues-shield]: https://img.shields.io/github/issues/egdev6/egdev-react-boilerplate.svg?style=for-the-badge
 [issues-url]: https://github.com/egdev6/egdev-react-boilerplate/issues
-[license-shield]: https://img.shields.io/github/license/egdev6/egdev-react-boilerplate.svg?style=for-the-badge
-[license-url]: https://github.com/egdev6/egdev-react-boilerplate/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/egdev6/react-boilerplate.svg?style=for-the-badge
+[license-url]: https://github.com/egdev6/react-boilerplate/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/egdev6
 [product-screenshot]: images/screenshot.png
