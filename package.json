@@ -2,6 +2,7 @@
   "name": "egdev-react-boilerplate",
   "private": false,
   "version": "2.0.2",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
